@@ -1,0 +1,212 @@
+/*This is the Header File formating*/
+  /*Approach:
+    Remove the default body margin and padding
+    Remove the default button margin and padding
+    wrap the entire body in a container div,and set its width to x%
+      and overflow to hidden to ensute the website is responsive.
+      set its margin to auto
+    Float the navigation bar(menu) to the right,
+    Float the logo/branding to ther left
+    Set a minimum height for the header in case the site is resized
+    Remove the default margin of h1
+    Remove the default margin and padding of ul
+    Set text-decoration of <a> to none, to remove the default link underline
+
+  */
+button{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font: 15px/1.5 arial,helvetica,sans-serif; /*font: font-size/line-height font-family*/
+}
+.container{
+  width: 80%; /*using % makes the website responsive */
+  margin: auto;
+  overflow: hidden; /* no scrollbar when text goes 'out of screen' */
+}
+header{
+  background: #35424a;
+  color: #ffffff;
+  min-height: 70px;
+  padding-top: 30px;
+  border-bottom: #e8491d 3px solid;
+}
+header nav{
+  color: #ffffff;
+  float: right;
+  margin-top: 10px;
+}
+
+.select{
+  min-height: 35px;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 30%;
+
+}
+
+      /* The Logo and the menu */
+header .logo{
+  float: left;
+}
+
+header .logo h1{
+  margin: 0;
+}
+
+header .menu{
+  float: right;
+}
+
+header a{
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header ul li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header span{
+  color: #e8491d;
+  font-weight: bold;
+}
+header span .user{
+  color: lightgreen;
+  font-weight: bold;
+}
+header a:hover{
+  color: #e8491d;
+  font-weight: bold;
+
+}
+
+
+/* This is the login file formating */
+
+ .login{
+
+  text-align: center;
+  margin: 60px auto;
+  //background-color: #bbff99;
+  background-color: #ddffcc;
+  width: 40%;
+  height: 350px;
+  padding: 10px;
+  border: none;
+
+
+}
+form fieldset{
+  width: 30%;
+  margin: auto;
+  min-height: 60px;
+ border: none;
+
+}
+form input{
+  min-height: 30px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+form fieldset button{
+  background-color: blue;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  margin: 5px;
+  height: 40px;
+  border: none;
+}
+
+ .error{
+  color: red;
+  font-weight: bold;
+
+}
+
+/* This is the home page formating */
+.read{
+  border:none;
+}
+
+.deleteBtn{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid red;
+}
+.updateBtn{
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid blue;
+}
+
+/* This is the about page formating */
+.info{
+  float: left;
+  height: 375px;
+  background-color: #ffcccc;
+  width: 47%;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+  margin: 30px 30px;
+  border: 1px dotted green;
+}
+.team{
+  background-color: #ecd9c6;
+  width: 47%;
+  text-align: center;
+  padding: 40px;
+  width: 30%;
+  overflow: hidden;
+  margin: 30px 30px;
+  border: 1px dotted green;
+}
+.thanks{
+  background-color: #ecd9c6;
+  width: 47%;
+  text-align: center;
+  padding: 40px;
+  width: 30%;
+  overflow: hidden;
+  margin: 30px 30px;
+  border: 1px dotted green;
+}
+
+
+/* This is the footer file formating */
+footer{
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+
+@media query(max-width: 768px) {
+  header .logo, header nav, header nav li{
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+
+}
+
+
+
+
+/*end*/
